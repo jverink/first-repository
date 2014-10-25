@@ -1,0 +1,11 @@
+body{
+	background-image: url('sunrise.JPG');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+h1{
+	color: white;
+}
+div{
+	color: white;
+}
