@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="weather.js"</script>
+    <title>Weather Conditions</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <h1>Current Weather</h1>
+  <form>
+    City:<input type = "text" name = "city_input" id = "city">
+    State:<select name = "state" id = "state"><br><br>
+        <option value="none"></option>
+        <option value="Washington">Washington</option>
+        <option value="Oregon">Oregon</option>
+        <option value="California">California</option>
+      </select><br><br>
+    <li><input type = "checkbox" name = "current temperature" id = "curTemp">Current Temperature</li>
+    <li><input type= "checkbox" name = "max temperature" id = "maxTemp">High Temperature</li>
+    <li><input type = "checkbox" name = "minimum temperature" id = "minTemp">Low Temperature</li>
+    <li><input type = "checkbox" name = "wind" id = "windSpeed">Wind Speed</li>
+    <input type = "submit" value = "Save Settings" onclick = "saveSettings()">
+    <input type = "submit" value = "Get Weather" onclick = "getWeather()">
+  </form>  
+</body>
+</html>
