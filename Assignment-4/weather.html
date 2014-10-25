@@ -2,26 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="weather.js"</script>
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
     <title>Weather Conditions</title>
-    <link rel="stylesheet" href="style.css">
   </head>
 <body>
   <h1>Current Weather</h1>
-  <form>
+  <form action= '' method = 'GET' name="get_weather">
     City:<input type = "text" name = "city_input" id = "city">
-    State:<select name = "state" id = "state"><br><br>
-        <option value="none"></option>
-        <option value="Washington">Washington</option>
-        <option value="Oregon">Oregon</option>
-        <option value="California">California</option>
-      </select><br><br>
-    <li><input type = "checkbox" name = "current temperature" id = "curTemp">Current Temperature</li>
-    <li><input type= "checkbox" name = "max temperature" id = "maxTemp">High Temperature</li>
-    <li><input type = "checkbox" name = "minimum temperature" id = "minTemp">Low Temperature</li>
+    State:
+    <select id = "state"><br><br>
+      <option value=" "></option>
+      <option value="CA">California</option>
+      <option value="OR">Oregon</option>
+      <option value="SC">South Carolina</option>
+      <option value="WA">Washington</option>
+      <option value="WI">Wisconsin</option>
+    </select><br><br>
+    <li><input type = "checkbox" name = "current_temperature" id = "curTemp">Current Temperature</li>
+    <li><input type= "checkbox" name = "max_temperature" id = "maxTemp">High Temperature</li>
+    <li><input type = "checkbox" name = "minimum_temperature" id = "minTemp">Low Temperature</li>
     <li><input type = "checkbox" name = "wind" id = "windSpeed">Wind Speed</li>
-    <input type = "submit" value = "Save Settings" onclick = "saveSettings()">
-    <input type = "submit" value = "Get Weather" onclick = "getWeather()">
+    <input type = "button" value = "Save Settings" onclick = "saveSettings()">
+    <input type = "button" value = "Get Weather" onclick = "getWeather()">
   </form>  
+  <section>
+    <div id="selCity">CITY: </div><br>
+    <div id="selState">STATE: </div><br>
+    <div id="selTemp">Current Temperature: </div><br>
+    <div id="selMax">Today's High: </div><br>
+    <div id="selMin">Today's Low: </div><br>
+    <div id="selWind">Wind: </div><br>
+  </section>
 </body>
 </html>
+
+
